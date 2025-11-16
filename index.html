@@ -1,30 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Status AI App</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <div id="root"></div>
-
-  <!-- ✅ REQUIRED: React libraries -->
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-
-  <!-- Your app code -->
-  <script src="aiEngine.js"></script>
-  <script src="aiInteractions.js"></script>
-  <script src="storage.js"></script>
-  <script src="App.js"></script>
-  <script src="Feed.js"></script>
-  <script src="PostView.js"></script>
-  <script src="DMView.js"></script>
-  <script src="CharactersPanel.js"></script>
-  <script src="UniverseLoreEditor.js"></script>
-  <script src="index.js"></script>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Test React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script>
+      const e = React.createElement;
+      ReactDOM.createRoot(document.getElementById('root')).render(
+        e('div', null, 'Hello, React is working!')
+      );
+    </script>
+  </body>
 </html>
